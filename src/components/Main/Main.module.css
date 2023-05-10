@@ -1,0 +1,132 @@
+.main {
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+.infMain {
+    width: 50%;
+    align-items: center;
+    margin-top: 150px;
+    display: flex;
+   
+}
+.ftMain {
+    width: 50%;
+    display: flex;
+   margin-bottom: 80px;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.foto { 
+   border-radius: 0;
+   height: 90%;  
+    
+   margin-left: 30px;
+  
+}
+
+
+.textos {
+    margin-left: 140px;
+    margin-bottom: 150px;
+}
+
+.texto1 {
+    color: white;
+    margin-bottom: 10px;
+}
+.texto2 {
+   
+        /* Primeiro passo: definir um degradê como fundo */
+        background-image: linear-gradient(90deg, rgba(127,255,208,1) 0%, rgba(127,255,212,1) 7%, rgba(176,127,207,1) 35%, rgba(219,14,196,1) 64%, rgba(116,22,105,1) 98%);
+      
+        /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+        background-clip: text;
+        -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+      
+        /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+        -webkit-text-fill-color: transparent;
+      
+        /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+        color: black;
+    
+        font-family: 'Lato', sans-serif;
+        font-size: 30px;
+        
+      
+}
+.texto3{
+    color:rgba(176,127,207,1);
+}
+.botao {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    margin-left: 00px;
+    color:  rgb(255, 255, 255);
+    background: #111;
+    border: 1px solid rgb(37, 0, 23);
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    margin-top: 100px;
+    position: relative;
+    z-index: 0;
+    font-weight:700;
+    letter-spacing: 2px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.botao:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+    letter-spacing: 3px;
+}
+
+.botao:before {
+    content: '';
+
+    background: linear-gradient(45deg, rgba(127,255,208,1), rgb(121, 72, 110), rgba(176,127,207,1), rgba(219,14,196,1), rgba(116,22,105,1));
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.botao:active {
+    color: #000
+}
+
+.botao:active:after {
+    background: transparent;
+}
+
+.botao:hover:before {
+    opacity: 1;
+}
+
+.botao:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(121, 72, 110);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}

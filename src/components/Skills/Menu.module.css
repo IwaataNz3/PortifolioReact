@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&family=Lato:wght@300;400;700&family=Secular+One&display=swap');
+
+.skills{
+    height: 100vh;
+    width: 100%;
+    background-color: #1F1F23;
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+.header {
+    
+    align-items: center;
+    display: flex;
+    height: 15%;
+   
+    justify-content: center;
+}
+
+.box {
+    height: 150px;
+    width: 80%;
+    padding: 25px;
+    display: flex;
+    margin-top: -50px;
+   
+    background-color:#1F1F23;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 50px;
+    }
+    .top {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+
+    }
+    .bottom {
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    button {
+        background-color: transparent;
+        color: white;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 10px 30px;
+        border: 1px solid #7fffd4 ;
+        border-radius: 10px;
+       cursor: pointer;
+    }
+    button:hover {
+        background-color: rgba(255, 255, 255, 0.034);
+        transform: scale(1.1);
+        transition: all 1s;
+        letter-spacing: 2px;
+    }
+    .local, .idade, .escola {
+        display: flex;
+        align-items: center;
+        color: white;
+        justify-content: center;
+    }
+    
+    .local img, .idade img, .escola img {
+        width: 20px;
+        margin-right: 5px;
+    }
+.main {
+    height: 85%;
+   padding: 30px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ color: white;
+
+}
+
+.cards {
+    border: 1px solid #7fffd4;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.itenspai{
+    
+    display: flex;
+    height: 100%;
+    width: 90%;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    column-gap: 200px;
+   
+  justify-content: space-around
+}
+
+.itens{
+    border: 1px solid rgb(38, 57, 77);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    width: 130px;
+    height: 150px;
+    
+   flex-direction: column;
+    color: rgb(242, 216, 243);
+    background-color: rgba(255, 255, 255, 0.164);
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.itens img {
+    width: 50px;
+}
+
+.itens:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+    background-color: rgba(255, 255, 255, 0.24);
+    letter-spacing: 2px;
+    color:white;
+}
